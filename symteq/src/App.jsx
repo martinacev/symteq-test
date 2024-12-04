@@ -1,13 +1,13 @@
-import Crud from "./components/crud/crud"
+
+import Crud from './components/crud/crud';
+import "./App.css";
 
 function App() {
- 
-
   return (
-    <div>
+    <div className="container">
       <Crud />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

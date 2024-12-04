@@ -4,6 +4,7 @@ import AddIcon from "@mui/icons-material/Add";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import Button from "../cta-button/Cta-button";
 
 const Crud = () => {
 	const [fields, setFields] = useState([{ id: uuidv4(), name: "", surname: ""  }]);
@@ -29,6 +30,7 @@ const Crud = () => {
 
 	return (
 		<div className={classes.container}>
+            <Button />
 			{fields.map((field, index) => (
 				<div key={field.id} className={classes.fields}>
 					<TextField
