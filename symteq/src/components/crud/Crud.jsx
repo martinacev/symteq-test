@@ -62,7 +62,7 @@ const Crud = () => {
 					)}
 				</div>
 			))}
-			 <Button onClick={handleSubmit} label="Submit" size='small' styleType="danger"></Button>
+			 <Button onClick={handleSubmit} label="Submit" size='small' styleType="primary"></Button>
 		</div>
 	);
 };
