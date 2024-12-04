@@ -1,4 +1,5 @@
 import classes from "./List.module.css";
+import PropTypes from 'prop-types'; 
 
 const List = ({name}) => {
     return (
@@ -10,7 +11,10 @@ const List = ({name}) => {
 
 List.defaultProps = {
     name: "Martin",
-    
+};
+
+List.propTypes = {
+    name: PropTypes.string,
 };
 
 export default List;
