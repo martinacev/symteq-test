@@ -30,7 +30,6 @@ const Crud = () => {
 
 	return (
 		<div className={classes.container}>
-           <Button label="Show List" size='medium' styleType="danger"></Button>
 			{fields.map((field, index) => (
 				<div key={field.id} className={classes.fields}>
 					<TextField
@@ -62,7 +61,7 @@ const Crud = () => {
 					)}
 				</div>
 			))}
-			 <Button onClick={handleSubmit} label="Submit" size='small' styleType="primary"></Button>
+			 <Button onClick={handleSubmit} label="Submit" size='' styleType="primary"></Button>
 		</div>
 	);
 };
